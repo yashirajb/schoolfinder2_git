@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import SchoolsList from '../SchoolsList/SchoolsList';
+import CardContainer from '../CardContainer/CardContainer';
 
 
 
@@ -25,17 +26,18 @@ componentDidMount(){
 //     })
 // }
 getSchools = async () => {
-    const schools = await fetch('https://data.cityofchicago.org/resource/8i6r-et8s.json');
+    const schools = await fetch('https://data.cityofchicago.org/resource/8i6r-et8s.json?school_type=Career academy');
     const parsedResponse = await schools.json()
     console.log(parsedResponse);
     this.setState({
-        schools: parsedResponse.data
+        schools: parsedResponse
     })
 }
 
-filterSchools = async (formData) => {
-    const filterASchool = await fetch('https://data.cityofchicago.org/resource/8i6r-et8s.json?school_id', {
-        method: "PUT",
+filterSchools = async (school_id, formData) => {
+    console.log("schools are filtering")
+    const filterASchool = await fetch(`https://data.cityofchicago.org/resource/8i6r-et8s.json`, {
+        // method: "GET",
         body: JSON.stringify(formData),
         headers: {
             "Content-Type": "application/json"
@@ -45,7 +47,7 @@ filterSchools = async (formData) => {
     console.log(parsedResponse)
     this.setState({
         schools: this.state.schools.map(function(school){
-            if(school.school_id !==school_id){
+            if(school.school_id !== school_id){
                 return school
             }else{
                 return parsedResponse.data
@@ -60,6 +62,7 @@ render(){
     return (
         <h1>
             <SchoolsList schools={this.state.schools} filterSchools={this.filterSchools} />
+            <CardContainer schools={this.state.schools} />
         </h1>
     )
 }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 
-class SchoolFilter extends Component{
+class SchoolsFilter extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -31,7 +31,7 @@ class SchoolFilter extends Component{
 
     handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Update")
+        console.log("Update from button submit")
         this.props.filterSchools(this.props.school.school_id, this.state)
     }
 
