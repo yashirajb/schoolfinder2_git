@@ -1,14 +1,15 @@
 import React from 'react';
+import SchoolsFilter from './SchoolsFilter/SchoolsFilter';
 
 
 function SchoolsList(props){
     const schools = props.schools.map(function(school){
         return(
-            <li key={school.id}>
+            <li key={school.school_id}>
             <h2>{school.long_name}</h2>
             <h2>{school.school_type}</h2>
             <h2>{school.attendance_boundaries}</h2>
-            <h2>{school.location_zip  }</h2>
+            <h2>{school.location_zip}</h2>
             <h2>{school.summary}</h2>
             <h2>{school.phone}</h2>
             <h2>{school.school_hours}</h2>
@@ -21,8 +22,9 @@ function SchoolsList(props){
             <h2>{school.college_enrollement_rate_school}</h2>
             <h2>{school.student_count_low_income}</h2>
 
-
-
+            <div>
+            <SchoolsFilter school={school} filterSchools={props.filterSchools}/>
+            </div>
             </li>
         )
     })
