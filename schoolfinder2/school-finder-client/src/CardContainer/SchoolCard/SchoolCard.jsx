@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button} from 'reactstrap';
-
+console.log(Card)
 class SchoolCard extends Component{
     constructor(props){
         super(props);
@@ -28,7 +28,7 @@ class SchoolCard extends Component{
         return(
             <div>
                 <Card>
-                    <CardImg top width="100%" src="" alt="Chicago School"></CardImg>
+                    <CardImg top width="100%" src="https://i.imgur.com/ThFIm2Y.jpg" alt="Chicago School"></CardImg>
                     <CardBody>
                         <div className="cardName">
                             <CardTitle>{this.props.school.long_name}</CardTitle>
