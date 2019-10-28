@@ -8,7 +8,7 @@ class SchoolsFilter extends Component{
             long_name: props.school.long_name,
             school_type: props.school.school_type,
             attendance_boundaries: props.school.attendance_boundaries,
-            location_zip: props.school.location_zip,
+            zip: props.school.zip,
             summary: props.school.summary,
             phone: props.school.phone,
             school_hours: props.school.school_hours,
@@ -39,10 +39,10 @@ class SchoolsFilter extends Component{
         return(
             <div>
                 <form onSubmit={this.handleSubmit}>
-                School Name: <input type="text" name="long_name" onChange={this.handleChange} value={this.state.long_name}/>
+                School Name: <input type="radio" name="long_name" onChange={this.handleChange} value={this.state.long_name}/>
                 Type of School: <input type="text" name="school_type" onChange={this.handleChange} value={this.state.school_type}/>
                 Attendance Boundaries: <input type="text" name="attendance_boundaries" onChange={this.handleChange} value={this.state.attendance_boundaries}/>
-                Zipcode: <input type="text" name="location_zip" onChange={this.handleChange} value={this.state.location_zip}/>
+                Zipcode: <input type="text" name="zip" onChange={this.handleChange} value={this.state.zip}/>
                 School Summary: <input type="text" name="summary" onChange={this.handleChange} value={this.state.summary}/>
                 School Phone Number: <input type="text" name="phone" onChange={this.handleChange} value={this.state.phone}/>
                 School Day Hours <input type="text" name="school_hours" onChange={this.handleChange} value={this.state.school_hours}/>
@@ -52,7 +52,7 @@ class SchoolsFilter extends Component{
                 After School Hours: <input type="text" name="after_school_hours" onChange={this.handleChange} value={this.state.after_school_hours}/>
                 Nearest Metro Bus: <input type="text" name="transportation_bus" onChange={this.handleChange} value={this.state.transportation_bus}/>
                 Nearest Elevated Train: <input type="text" name="transportation_el" onChange={this.handleChange} value={this.state.transportation_el}/>
-                College Enrollment Statistics: <input type="text" name="college_enrollement_rate_school" onChange={this.handleChange} value={this.state.college_enrollement_rate_school}/>
+                Graduation Rate(if applicable): <input type="text" name="graduation_rate_school" onChange={this.handleChange} value={this.state.graduation_rate_school}/>
                 Number of Low Income Students: <input type="text" name="student_count_low_income" onChange={this.handleChange} value={this.state.student_count_low_income}/>
 
                 <input type="submit" value="Submit" />

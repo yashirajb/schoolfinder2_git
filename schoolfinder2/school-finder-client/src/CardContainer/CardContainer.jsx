@@ -6,7 +6,7 @@ console.log(Container)
 function CardContainer(props){
     const schoolcards = props.schools.map(function(school){
         return(
-            <Col sm="4">
+            <Col sm="3">
                 <SchoolCard school={school} />
             </Col>
         )

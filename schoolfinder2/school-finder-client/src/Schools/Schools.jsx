@@ -26,7 +26,8 @@ componentDidMount(){
 //     })
 // }
 getSchools = async () => {
-    const schools = await fetch('https://data.cityofchicago.org/resource/8i6r-et8s.json?school_type=Career academy');
+    
+    const schools = await fetch('https://data.cityofchicago.org/resource/8i6r-et8s.json?transportation_el=Blue');
     const parsedResponse = await schools.json()
     console.log(parsedResponse);
     this.setState({
@@ -35,13 +36,13 @@ getSchools = async () => {
 }
 
 filterSchools = async (school_id, formData) => {
-    console.log("schools are filtering")
-    const filterASchool = await fetch(`https://data.cityofchicago.org/resource/8i6r-et8s.json`, {
-        // method: "GET",
-        body: JSON.stringify(formData),
-        headers: {
-            "Content-Type": "application/json"
-        }
+    console.log("user made change in form and submitted, waiting for fetch")
+    const filterASchool = await fetch(`https://data.cityofchicago.org/resource/8i6r-et8s.json?${school_id}`, {
+        // // method: "GET",
+        // body: JSON.stringify(formData),
+        // headers: {
+        //     "Content-Type": "application/json"
+        // }
     })
     const parsedResponse = await filterASchool.json();
     console.log(parsedResponse)
@@ -61,7 +62,7 @@ filterSchools = async (school_id, formData) => {
 render(){
     return (
         <h1>
-            <SchoolsList schools={this.state.schools} filterSchools={this.filterSchools} />
+            <SchoolsList schools={this.state.schools} filterSchools={this.filterSchools}  />
             <CardContainer schools={this.state.schools} />
         </h1>
     )
