@@ -1,0 +1,24 @@
+                {/* <FormGroup>
+        <Label for="exampleSelectMulti">Type of School</Label>
+        <Input
+          type="select"
+          name="school_type"
+          id="exampleSelectMulti"
+          onChange={this.handleChange}
+          value={this.state.school_type}
+          multiple
+        >
+          <option>Neighborhood</option>
+          <option>Charter</option>
+          <option>Magnet</option>
+          <option>Small</option>
+          <option>Citywide-Option</option>
+          <option>Selective Enrollment</option>
+          <option>Regional gifted center </option>
+          <option>Special Education</option>
+          <option>Military academy</option>
+          <option>Classical</option>
+          <option>Contract</option>
+          <option>Career academy</option>
+        </Input>
+      </FormGroup> */}
