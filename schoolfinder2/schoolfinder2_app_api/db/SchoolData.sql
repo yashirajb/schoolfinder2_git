@@ -1,0 +1,4 @@
+INSERT INTO chischools( Long_Name, School_Type, Is_High_School, Is_Middle_School, Is_Elementary_School, Summary, Address, Zip, Grades_Offered_All, Student_Count_Total, Student_Count_Low_Income, Dress_Code, School_Hours, After_School_Hours, Earliest_Drop_Off_Time, Transportation_Bus, Transportation_El, Graduation_Rate_School, Rating_Statement   ) VALUES ('First', '1-1', '200', 'A-D', 'Book 200 AD', 'Author 200AD');
+
+Academy for Global Citizenship Charter School, Charter, N, Y, Y, AGC is a dual-language International Baccalaureate charter school that prepares students to be environmentally and internationally minded by examining how their choices impact our community and the world. Organic, nutritionally balanced meals, daily yoga, gardening, wellness instruction and ecologically sustainable practices throughout the school are core to our mission.
+4647 W 47TH ST, 60632, K,1,2,3,4,5,6,7,8 , 314, 302, Y, 
