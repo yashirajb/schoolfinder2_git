@@ -5,6 +5,7 @@ class SchoolCard extends Component{
     constructor(props){
         super(props);
         this.state = {
+            //im passing in props from the CardContainer 
             long_name: this.props.school.long_name,
             //?long_name=Abraham Lincoln Elementary School
             school_type: this.props.school.school_type,

@@ -19,7 +19,8 @@ class Schools extends Component {
 handleFormInput = (formData) => {
     console.log(formData);
     this.setState({
-        attendance_boundaries: formData.attendance_boundaries
+        // attendance_boundaries: formData.attendance_boundaries
+        transportation_el: formData.transportation_el
     })
 }
 
@@ -38,21 +39,30 @@ getSchools = async () => {
     // const metroBus = transportation_bus="";
     // const elTrain = transportation_el="";
     // const rating = rating_statement="";
-    const schools = await fetch('https://data.cityofchicago.org/resource/8i6r-et8s.json?is_high_school=N&transportation_el=Blue&');
+
+    const formData = this.state.schools
+    const searchString = Object.keys(formData).map(key => key + '=' + formData[key]).join('&');
+    const schools = await fetch(`https://data.cityofchicago.org/resource/8i6r-et8s.json?${searchString}`);
+
     // const schools = await fetch(`https://data.cityofchicago.org/resource/8i6r-et8s.json?${attendance}&${type}&${zipCode}&${dress}&${dropOff}&${metroBus}&${elTrain}&${rating}`);
     // const schools = await fetch(`https://data.cityofchicago.org/resource/8i6r-et8s.json?${attendance}`);
     const parsedResponse = await schools.json()
     console.log(parsedResponse);
     //I need a variable to store what's returned after requested fetch criteria has been filtered
-    // const fetchFilter = await parsedResponse.data[i]
-    // console.log(fetchFilter)
-    // displayFetch = 
     //now I need to get fetchFilter to render on the page and it needs to connect with the schoolcards in the CardContainer
     this.setState({
         schools: parsedResponse
+    //     schools: this.state.schools.map(function(school){
+    //         if(school.school_id !== school_id){
+    //             return school
+    //         }else{
+    //             return parsedResponse
+            // }
+        // })  
     })
 }
 
+// somehow use the {schoolcards} and connect it to the filter url seach results
 
 
 //********************** Create ************************/
@@ -87,13 +97,13 @@ getSchools = async () => {
 //     //componenent's state object should now be updated (via setState)
 //     this.setState({
 //             schools: filteredSchools
-// //         schools: this.state.schools.map(function(school){
-// //             if(school.school_id !== school_id){
-// //                 return school
-// //             }else{
-// //                 return parsedResponse
-// //             }
-// //         })   
+        // schools: this.state.schools.map(function(school){
+        //     if(school.school_id !== school_id){
+        //         return school
+        //     }else{
+        //         return parsedResponse
+        //     }
+        // })   
 //     })
 // }
 

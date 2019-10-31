@@ -7,7 +7,7 @@ console.log(Container)
 //in the fetch request
 
 function CardContainer(props){
-    const schoolcards = props.schools.map(function(school){
+    const schoolcards = props.schools.map(school =>{
         return(
             <Col sm="3">
                 <SchoolCard school={school} />

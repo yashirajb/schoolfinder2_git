@@ -6,7 +6,8 @@ class FormInput extends Component{
     constructor(){
         super();
         this.state = {
-            attendance_boundaries: ""
+            // attendance_boundaries: ""
+            transportation_el : null 
         }
 
     }
@@ -35,9 +36,22 @@ class FormInput extends Component{
             <h1>Find a school:</h1>
             <br />
         <form onSubmit = {this.handleSubmit}>
-        <label htmlFor="attendance_boundaries">Attendance Boundaries</label>
+        <div class="form-group">
+            <label htmlFor="transportation_el">Select Nearest El Train:</label>
+            <select name="transportation_el" onChange={this.handleChange}>
+            {/* <input name="transportation_el" onChange={this.handleChange}/> */}
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Orange">Orange</option>
+                <option value="Green">Green</option>
+                <option value="Brown">Brown</option>
+                <option value="Pink">Pink</option>
+            </select>
+        <input type="submit" value="Submit"/> 
+        </div>
+        {/* <label htmlFor="attendance_boundaries">Attendance Boundaries</label>
         <input type="text" name="attendance_boundaries" onChange={this.handleChange}/>
-        <input type="submit" value="Input Attendance Boundary Preference"/>
+        <input type="submit" value="Input Attendance Boundary Preference"/> */}
     </form>
     </div>
     )
