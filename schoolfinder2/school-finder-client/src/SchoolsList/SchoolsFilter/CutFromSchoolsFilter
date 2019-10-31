@@ -22,3 +22,24 @@
           <option>Career academy</option>
         </Input>
       </FormGroup> */}
+
+
+
+      ***************cut from schools before modifications: 
+
+
+componentDidMount(){
+    console.log("component is mounting")
+    this.getSchools()
+    //this only mounts once---any other rendering is because state is changing 
+} 
+getSchools = async () => {
+    const schools = await fetch('https://data.cityofchicago.org/resource/8i6r-et8s.json?is_high_school=N&transportation_el=Blue&');
+    const parsedResponse = await schools.json()
+    console.log(parsedResponse);
+    this.setState({
+        schools: parsedResponse
+    })
+}
+
+

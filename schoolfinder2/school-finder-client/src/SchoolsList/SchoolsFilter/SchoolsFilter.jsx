@@ -86,6 +86,7 @@ class SchoolsFilter extends Component{
         </Input>
       </FormGroup>
                 Attendance Boundaries: <input type="text" name="attendance_boundaries" onChange={this.handleChange} value={this.state.attendance_boundaries}/>
+                {/* here we want to target attendance_boundaries (name). This will correspond with the thing that we're changing.  */}
                 Zipcode: <input type="text" name="zip" onChange={this.handleChange} value={this.state.zip}/>
                 School Summary: <input type="text" name="summary" onChange={this.handleChange} value={this.state.summary}/>
                 School Phone Number: <input type="text" name="phone" onChange={this.handleChange} value={this.state.phone}/>

@@ -43,7 +43,7 @@ class SchoolCard extends Component{
     }
 
     render(){
-        console.log("props from SchoolCard being passed")
+        console.log("schoolcards will render next")
         return(
             <div>
                 <Card>
