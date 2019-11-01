@@ -1,0 +1,10 @@
+        {/* <input type="submit" value="Submit"/>  */}
+
+
+     
+        {/* <label htmlFor="attendance_boundaries">Attendance Boundaries</label>
+        <input type="text" name="attendance_boundaries" onChange={this.handleChange}/>
+        <input type="submit" value="Input Attendance Boundary Preference"/> */}
+
+
+             {/* <input name="transportation_el" onChange={this.handleChange}/> */}
