@@ -14,47 +14,47 @@ class SchoolCard extends Component{
             // // rating_statement: null
             // overall_rating : null 
 
-            // transportation_el : this.props.school.transportation_el,
+            transportation_el : this.props.school.transportation_el,
             // school_type : this.props.school.school_type,
             // dress_code : this.props.school.dress_code,
             // overall_rating : this.props.overall_rating
 
 
-            //im passing in props from the CardContainer
-            long_name: this.props.school.long_name,
-            //?long_name=Abraham Lincoln Elementary School
-            school_type: this.props.school.school_type,
-            // ?school_type=Career academy----go through and find all options for school type
-            attendance_boundaries: this.props.school.attendance_boundaries,
-            //?attendance_boundaries=N
-            zip: this.props.school.zip,
-            //?zip=60602
-            summary: this.props.school.summary,
-            //?summary=``
-            phone: this.props.school.phone,
-            //?phone=3122254668
-            school_hours: this.props.school.school_hours,
-            //?school_hours=07:30 AM - 02:30 PM
-            grades_offered_all: this.props.school.grades_offered_all,
-            ////?grades_offered_all=10,11,12
-            dress_code: this.props.school.dress_code,
-            ////?dress_code=N
-            earliest_drop_off_time: this.props.school.earliest_drop_off_time,
-            //?earliest_drop_off_time=06:00 AM
-            after_school_hours: this.props.school.after_school_hours,
-            //?after_school_hours=02:45 PM - 05:30 PM
-            transportation_bus: this.props.school.transportation_bus,
-            //?transportation_bus=103
-            transportation_el: this.props.school.transportation_el,
-            //?transportation_el=Blue
-            graduation_rate_school: this.props.school.graduation_rate_school,
-            //?college_enrollment_rate_school=0
-            student_count_low_income: this.props.school.student_count_low_income,
-            //?student_count_low_income=0 --number datatype, query options available 
-            rating_status: props.school.rating_status,
-            //?rating_status=Good Standing
-            rating_statement: this.props.school.rating_statement
-            //?rating_statement=This school did not have enough data for a 2015-2016 Performance Policy Rating.
+            // //im passing in props from the CardContainer
+            // long_name: this.props.school.long_name,
+            // //?long_name=Abraham Lincoln Elementary School
+            // school_type: this.props.school.school_type,
+            // // ?school_type=Career academy----go through and find all options for school type
+            // attendance_boundaries: this.props.school.attendance_boundaries,
+            // //?attendance_boundaries=N
+            // zip: this.props.school.zip,
+            // //?zip=60602
+            // summary: this.props.school.summary,
+            // //?summary=``
+            // phone: this.props.school.phone,
+            // //?phone=3122254668
+            // school_hours: this.props.school.school_hours,
+            // //?school_hours=07:30 AM - 02:30 PM
+            // grades_offered_all: this.props.school.grades_offered_all,
+            // ////?grades_offered_all=10,11,12
+            // dress_code: this.props.school.dress_code,
+            // ////?dress_code=N
+            // earliest_drop_off_time: this.props.school.earliest_drop_off_time,
+            // //?earliest_drop_off_time=06:00 AM
+            // after_school_hours: this.props.school.after_school_hours,
+            // //?after_school_hours=02:45 PM - 05:30 PM
+            // transportation_bus: this.props.school.transportation_bus,
+            // //?transportation_bus=103
+            // transportation_el: this.props.school.transportation_el,
+            // //?transportation_el=Blue
+            // graduation_rate_school: this.props.school.graduation_rate_school,
+            // //?college_enrollment_rate_school=0
+            // student_count_low_income: this.props.school.student_count_low_income,
+            // //?student_count_low_income=0 --number datatype, query options available 
+            // rating_status: props.school.rating_status,
+            // //?rating_status=Good Standing
+            // rating_statement: this.props.school.rating_statement
+            // //?rating_statement=This school did not have enough data for a 2015-2016 Performance Policy Rating.
         };
     }
 
@@ -62,8 +62,8 @@ class SchoolCard extends Component{
         console.log("schoolcards will render next")
         return(
             <div>
-                {/* <FormInput handleFormInput={props.handleFormInput}/> */}
-                <Card>
+                <FormInput handleFormInput={props.handleFormInput}/>
+                {/* <Card>
                     <CardImg top width="100%" src="https://i.imgur.com/ThFIm2Y.jpg" alt="Chicago School"></CardImg>
                     <CardBody>
                         <div className="cardName">
@@ -135,7 +135,7 @@ class SchoolCard extends Component{
                         </div>
                         <br />
                     </CardBody>
-                </Card>
+                </Card> */}
             </div>  
 
         )

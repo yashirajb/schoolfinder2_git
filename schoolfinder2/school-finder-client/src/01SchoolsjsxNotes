@@ -46,16 +46,16 @@ getSchools = async (formData) => {
     console.log(parsedResponse);
     //I need a variable to store what's returned after requested fetch criteria has been filtered
     //now I need to get fetchFilter to render on the page and it needs to connect with the schoolcards in the CardContainer
-    this.setState({
-        schools: parsedResponse
-    //     // schools: this.state.schools.map(function(school){
-    //     //     if(school.school_id !== school_id){
-    //     //         return school
-    //     //     }else{
-    //     //         return parsedResponse
-    //     //     }
-    //     // })  
-    })
+    // this.setState({
+    //     schools: parsedResponse
+    //     schools: this.state.schools.map(function(school){
+    //         if(school.school_id !== school_id){
+    //             return school
+    //         }else{
+    //             return parsedResponse
+    //         }
+    //     })  
+    // })
 }
 
 // somehow use the {schoolcards} and connect it to the filter url seach results
@@ -110,7 +110,7 @@ render(){
         <h1>
             {/* <SchoolsList schools={this.state.schools} filterSchools={this.filterSchools}  /> */}
             {/* <SchoolsFilter schools={this.state.schools}  /> */}
-            <FormInput handleFormInput= {this.handleFormInput} schools={this.state.schools} />
+            {/* <FormInput handleFormInput= {this.handleFormInput} schools={this.state.schools} /> */}
             <br />
             <br />
             <CardContainer schools={this.state.schools} handleFormInput={this.props.handleFormInput} />
