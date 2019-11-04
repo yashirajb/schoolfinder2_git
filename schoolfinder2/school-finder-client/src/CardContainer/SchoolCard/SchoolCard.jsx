@@ -53,21 +53,25 @@ class SchoolCard extends Component{
             //?student_count_low_income=0 --number datatype, query options available 
             rating_status: props.school.rating_status,
             //?rating_status=Good Standing
-            rating_statement: this.props.school.rating_statement
+            rating_statement: this.props.school.rating_statement,
             //?rating_statement=This school did not have enough data for a 2015-2016 Performance Policy Rating.
+            primary_category: this.props.school.primary_category
         };
     }
 
     render(){
+        
         console.log("schoolcards will render next")
+      
+    
         return(
-            <div>
+            <div className="schoolCards">
                 {/* <FormInput handleFormInput={props.handleFormInput}/> */}
                 <Card>
                     <CardImg top width="100%" src="https://i.imgur.com/ThFIm2Y.jpg" alt="Chicago School"></CardImg>
                     <CardBody>
                         <div className="cardName">
-                            <CardTitle>{this.props.school.long_name}</CardTitle>
+                            <CardTitle ><small>{this.props.school.long_name}</small></CardTitle>
                         </div>
                         <br />
                         <div className="cardSchoolType">

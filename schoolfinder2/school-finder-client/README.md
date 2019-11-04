@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Chicago Public School Finder App 2.0
 
-## Available Scripts
+## Application Goal: 
 
-In the project directory, you can run:
+Original Application Goal from 1st iteration: 
 
-### `yarn start`
+The Chicago School Finder app's ultimate goal is to enable a user to input a keyword in one of (or in) multiple search boxes and return all public K-12 schools that match the keyword entered. This app was developed with a particular user in mind in an attempt to alleviate stressors associated with being a lower-income caregiver who resides in a large urban area. A common problem lower-income caregivers of school-aged children experience is having limited time, money, and/or mobility to make a well-informed decision about what school(s) the children in their care should attend. The Chicago School Finder App increases the caregiver's ability to quickly find or eliminate schools based on the school's zipcode, the school's rating, whether the school has a dress code (uniform) policy, or if a school is proximate to public transit.  
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Application Goal for Version 2.0: 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+With version 2.0, The Chicago School Finder App's ultimate goal is still to enable a user to input a keyword (or search term) into multiple search boxes and return all K-12 public schools that match the keyword (or search term) entered. This iterated version of the app does just that. A user is able to enter multiple search terms and submit once, enabling the app to present filtered school results to the user. The intended user for the first version is still the intended user for the iterated version, although anyone who needs to search for filtered Chicago schools can use the app. 
 
-### `yarn test`
+## API Used: 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+API Used for 1st iteration: 
 
-### `yarn build`
+The API used for this project was through the city of Chicago website (https://data.cityofchicago.org/). The app uses AJAX to make requests from the Chicago API to the Chicago Public School Finder App, focusing on the following search criteria: 
+ 
+ - Zipcode
+ - School Rating
+ - Dress Code
+ - Elevated Train Accessibility
+ - Metro Bus Accessibility
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ API Used for Version 2.0:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The API used for version 2.0 was the same as the API used for the 1st iteration, although the search criteria has been slightly altered to improve filtering performance. The iterated version focuses on the following search criteria:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 
+ - Elevated Train Accessibility 
+ - School Category
+ - School Rating
+ - School Type
+ - Dress Code
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ Both Zipcode and Metro Bus accessibility search criteria were eliminated for the second iteration of the app as their search results typically yielded only one to a few schools, which often created the impression that the users other inputted criteria failed to return results. Eliminating zipcode and metro bus search terms enables the user to see more search results, which they can then examine to find nearest zipcode and the nearest Metro Bus(es). 
+ 
+## Other Frameworks used:
+ 
+Frameworks used for 1st iteration: 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app primarily uses bootstrap for styling, more specifically for the creation of the forms used throughout the app. The app also utilizes the JQuery javascript library to enable the app to properly display data retrieved from the Chicago API onto the browser after each AJAX request is made. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Frameworks used for version 2.0: 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The second iteration of the app uses React and Reactstrap (for styling)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Changes/Improvements :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Changes needed and suggested improvements for 1st iteration: 
 
-### Code Splitting
+One way this app could be immediately improved is by incorporating the use of a scroll feature for all returned schools. Another useful improvement would be to create the ability for users to capture the school(s) that match the total sum of their search inputs. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Changes needed and suggested improvements for version 2.0: 
 
-### Analyzing the Bundle Size
+The second iteration of the app successfully created the ability for users to capture the schools that match the total sum of their search criteria. The app still does not utilize the continuous scroll feature for all retureend schoos
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Wireframes :
 
-### Advanced Configuration
+Wireframes for version 2.0: 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
