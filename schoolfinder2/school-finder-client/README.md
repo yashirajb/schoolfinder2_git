@@ -24,7 +24,7 @@ The API used for this project was through the city of Chicago website (https://d
 
  API Used for App Version 2.0:
 
-The API used for version 2.0 is the same as the API used for the 1st iteration, although the search criteria has been slightly altered to improve filtering performance. The iterated version focuses on the following search criteria:
+The API used for version 2.0 is https://data.cityofchicago.org/, the same API used for the 1st iteration. Additionally, version 2.0 allows users to select from the following search criteria:
 
  
  - Elevated Train Accessibility 
@@ -34,7 +34,7 @@ The API used for version 2.0 is the same as the API used for the 1st iteration, 
  - Dress Code
 
 
- Both Zipcode and Metro Bus accessibility search criteria were eliminated for the second iteration of the app as these search criteria typically yielded only one to a few schools in the search results, which often created the impression that the users other inputted criteria failed to return results. Eliminating zipcode and metro bus search terms enables the user to see more search results, which they can then examine to find nearest zipcode and nearest Metro Bus(es). 
+ Both Zipcode and Metro Bus accessibility (search criteria inlcuded in the first iteration) were eliminated for the second iteration of the app as these search criteria typically yielded only one to a few schools in the search results, creating the overall impression that the users other inputted criteria failed to return results. Eliminating zipcode and metro bus search terms enables the user to see more search results, which they can then examine to find nearest zipcode and nearest Metro Bus(es). 
  
 ## Other Frameworks used:
  
@@ -44,7 +44,7 @@ The app primarily uses bootstrap for styling, more specifically for the creation
 
 Frameworks used for version 2.0: 
 
-The second iteration of the app uses React and Reactstrap (for styling)
+The second iteration of the app uses React. Reactstrap and CSS are used for styling. 
 
 
 ## Changes/Improvements :
@@ -55,7 +55,7 @@ One way this app could be immediately improved is by incorporating the use of a 
 
 Changes needed and suggested improvements for version 2.0: 
 
-The second iteration of the app successfully created the ability for users to capture the schools that match the total sum of their search criteria. The app still does not utilize the continuous scroll feature for all returned schools. 
+The second iteration of the app successfully created the ability for users to capture the schools that match the total sum of their search criteria. The app still does not utilize the continuous scroll feature for all returned schools. One immediate improvement would be the inclusion of react router, the standard routing library for React. 
 
 
 ## Wireframes :
@@ -63,3 +63,4 @@ The second iteration of the app successfully created the ability for users to ca
 Wireframes for version 2.0: 
 
 https://photos.app.goo.gl/gXv874pWVR8KSYEx9
+
