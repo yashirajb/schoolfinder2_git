@@ -7,7 +7,7 @@ font-family: Arial, Helvetica, sans-serif;
 .FormInputTop{
   text-align: center; 
   color:#162E4A;
-  background-color:  rgb(155, 221, 233);
+  background-color:  rgba(155, 221, 233, 0.404);
 
 }
 
@@ -20,40 +20,40 @@ font-family: Arial, Helvetica, sans-serif;
 
 .submitbutton{
   background-color:  #E9ECEE;
-  border-color:  rgb(155, 221, 233);
-  border-width: 5px;
+  border-color:  rgb(155, 221, 233, 0.404);
+  border-width: 10px;
   
 }
 
 .searchresults{
   text-align: center; 
   color:#162E4A;
-  background-color:  rgb(155, 221, 233);
+  background-color:  rgba(155, 221, 233, 0.404);
 
 }
 
 .schoolelbutton{
-  border-color:  rgb(155, 221, 233);
+  border-color:  rgb(155, 221, 233, 0.404);
   border-width: 5px;
 }
 
 .schoolcategorybutton{
-  border-color:  rgb(155, 221, 233);
+  border-color:  rgb(155, 221, 233, 0.404);
   border-width: 5px;
 }
 
 .schoolratingbutton{
-  border-color:  rgb(155, 221, 233);
+  border-color:  rgb(155, 221, 233, 0.404);
   border-width: 5px;
 }
 
 .schooltypebutton{
-  border-color:  rgb(155, 221, 233);
+  border-color:  rgb(155, 221, 233, 0.404);
   border-width: 5px;
 }
 
 .schooldressbutton{
-  border-color:  rgb(155, 221, 233);
+  border-color:  rgb(155, 221, 233, 0.404);
   border-width: 5px;
 }
 

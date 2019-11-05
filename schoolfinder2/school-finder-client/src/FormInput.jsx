@@ -73,7 +73,7 @@ class FormInput extends Component{
 
     <form onSubmit = {this.handleSubmit}>
         <div className="custom-select">
-            <label htmlFor="primary_category"><div className="schoolcategory">Select School Category:  </div></label>
+            <label htmlFor="primary_category"><div className="schoolcategory">Select School Category: </div> </label>
             {/* <br/> */}
             <select name="primary_category" onChange={this.handleChange}>
        
