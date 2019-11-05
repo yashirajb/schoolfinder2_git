@@ -1,52 +1,118 @@
+.custom-select{
+position: relative;
+font-family: Arial, Helvetica, sans-serif;
 
+}
 
 .FormInputTop{
   text-align: center; 
+  color:#162E4A;
+  background-color:  rgb(155, 221, 233);
+
 }
 
 .submitAll{
   text-align: center;
+  color: #162E4A ;
+  background-color: #E9ECEE;
+  
+}
+
+.submitbutton{
+  background-color:  #E9ECEE;
+  border-color:  rgb(155, 221, 233);
+  border-width: 5px;
+  
+}
+
+.searchresults{
+  text-align: center; 
+  color:#162E4A;
+  background-color:  rgb(155, 221, 233);
+
+}
+
+.schoolelbutton{
+  border-color:  rgb(155, 221, 233);
+  border-width: 5px;
+}
+
+.schoolcategorybutton{
+  border-color:  rgb(155, 221, 233);
+  border-width: 5px;
+}
+
+.schoolratingbutton{
+  border-color:  rgb(155, 221, 233);
+  border-width: 5px;
+}
+
+.schooltypebutton{
+  border-color:  rgb(155, 221, 233);
+  border-width: 5px;
+}
+
+.schooldressbutton{
+  border-color:  rgb(155, 221, 233);
+  border-width: 5px;
+}
+
+/* .navname{
+  color:  #037AFB;
+  display: flex;
+ 
+} */
+/* .display-3{
+  display: flex;
+} */
+
+/* .schoolsearcher{
+  color: #037AFB;
+} */
+
+
+.eltrain{
+  /* color: #037AFB; */
+  color: rgb(223, 102, 46);
+  /* color: red; */
+  font-size: 20px;
+}
+
+.schoolcategory{
+  /* color: #037AFB; */
+  color: rgb(223, 102, 46);
+  /* color:red; */
+  font-size: 20px;
+}
+
+.schoolrating{
+  /* color: #037AFB; */
+  color: rgb(223, 102, 46);
+  /* color:red; */
+  font-size: 20px;
+}
+
+.schooltype{
+  /* color: #037AFB; */
+  color: rgb(223, 102, 46);
+  /* color: red; */
+  font-size: 20px;
+}
+
+.dresscode{
+  /* color: #037AFB; */
+  color: rgb(223, 102, 46);
+  /* color: red; */
+  font-size: 20px;
+}
+
+.button{
+  background-color: #162E4A
 }
 
 .cardName{
   color: #1B1B33;
   font-weight: bold;
-}
-
-.cardSchoolType{
-
-}
-
-.cardSchoolAttendance{
-
-}
-
-.cardLocationZip{
-
-}
-
-.cardSchoolSummary{
-
-}
-
-.cardPhoneNumber{
-
-}
-
-.cardSchoolHours{
-
-}
-
-.cardGradesOffered{
-
-}
-
-.cardDressCode{
-
-}
-
-.cardDropOff{
-
 }
 
 .cardAfterSchool{
@@ -55,34 +121,8 @@
 
 }
 
-.cardMetroBus{
-
-}
-
-.cardMetroEl{
-
-}
-
-.cardGraduationRate{
-
-}
-
-.cardLowIncome{
-
-}
-
-.cardRatingStatus{
-
-}
-
-.cardRatingStatement{
-
-}
-
 .copyright{
   text-align: right;
 }
 
-.searchResults{
-  font-size: 10px;
-}
+

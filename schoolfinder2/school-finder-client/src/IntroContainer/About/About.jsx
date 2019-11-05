@@ -8,7 +8,7 @@ import AboutSchooFinderModal from './SchoolFinderModal/SchoolFinderModal';
 function About() {
     return (
       <UncontrolledAlert color="info">
-       New to SchoolFinder? Click below to learn more <div className="edmodal"></div>
+       New to The Chicago SchoolFinder App? Click below to learn more <div className="edmodal"></div>
        <br></br>
     
        <AboutSchooFinderModal />

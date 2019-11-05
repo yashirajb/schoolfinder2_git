@@ -41,14 +41,19 @@ class FormInput extends Component{
     return(
         <div>
             <div className="FormInputTop">
+            <div className='findaschool'>
             <h1>Find a school:</h1>
             </div>
+            </div>
             <br />
+            <br/>
         <form onSubmit = {this.handleSubmit}>
         <div className="custom-select">
-            <label htmlFor="transportation_el">Select Nearest El Train:</label>
+            <label htmlFor="transportation_el"><div className="eltrain">Select Nearest El Train:</div></label>
             <select name="transportation_el" onChange={this.handleChange}>
        
+       <br/>
+       <br/>
 
                 <option value="">No Selection</option>
                 <option value="Red">Red</option>
@@ -59,14 +64,17 @@ class FormInput extends Component{
                 <option value="Pink">Pink</option>
             </select>
             <br />
-        <input type="submit" value="Submit Individual Selection"/>
+            <br/>
+        <input className="schoolelbutton" type="submit" value="Submit Individual Selection"/>
         </div>
     </form>
     <br />
+    <br/>
 
     <form onSubmit = {this.handleSubmit}>
         <div className="custom-select">
-            <label htmlFor="primary_category">Select School Category:</label>
+            <label htmlFor="primary_category"><div className="schoolcategory">Select School Category:  </div></label>
+            {/* <br/> */}
             <select name="primary_category" onChange={this.handleChange}>
        
 
@@ -76,17 +84,19 @@ class FormInput extends Component{
                 <option value="HS">High School</option>
 
             </select>
+            <br/>
             <br />
-        <input type="submit" value="Submit Individual Selection"/> 
+        <input className="schoolcategorybutton" type="submit" value="Submit Individual Selection"/> 
         </div>
    
     </form>
             <br />
+            <br/>
             <form onSubmit = {this.handleSubmit}>
         <div className="custom-select">
             {/* <label htmlFor="rating_statement">Select Rating Statement:</label>
             <select name="rating_statement" onChange={this.handleChange}> */}
-            <label htmlFor="overall_rating">Select School Rating:</label>
+            <label htmlFor="overall_rating"><div className="schoolrating">Select School Rating:</div></label>
             <select name="overall_rating" onChange={this.handleChange}>
        
 
@@ -106,16 +116,19 @@ class FormInput extends Component{
                 <option value="This school received a Level 3 rating, which is the lowest rating of academic performance at CPS. This rating is based on the CPS School Quality Rating Policy (SQRP).  To learn more, visit:  http://cps.edu/sqrp .">Lowest Performing School</option>
                 <option value="This school did not have enough data for a 2015-2016 Performance Policy Rating.">No Performance Data</option> */}
             </select>
+            <br/>
             <br />
-        <input type="submit" value="Submit Individual Selection"/>  
+        <input className="schoolratingbutton" type="submit" value="Submit Individual Selection"/>  
         </div>
    
     </form>
+    
         <br />
+        <br/>
 
         <form onSubmit = {this.handleSubmit}>
         <div className="custom-select">
-            <label htmlFor="school_type">Select School Type:</label>
+            <label htmlFor="school_type"><div className="schooltype"> Select School Type:</div></label>
             <select name="school_type" onChange={this.handleChange}>
 
                 <option value="">No Selection</option>
@@ -132,8 +145,9 @@ class FormInput extends Component{
                 <option value="Contract">Contract</option>
                 <option value="Career academy">Career Academy</option>
             </select>
+            <br/>
             <br />
-            <input type="submit" value="Submit Individual Selection"/>  
+            <input className="schooltypebutton" type="submit" value="Submit Individual Selection"/>  
         </div>
        
         </form>
@@ -173,10 +187,11 @@ class FormInput extends Component{
 
 
         <br/>
+        <br/>
 
         <form onSubmit = {this.handleSubmit}>
         <div className="custom-select">
-            <label htmlFor="dress_code">Select Dress Code Preference:</label>
+            <label htmlFor="dress_code"> <div className="dresscode">Select Dress Code Preference:</div></label>
             <select name="dress_code" onChange={this.handleChange}>
 
                 <option value="">No Selection</option>
@@ -184,8 +199,10 @@ class FormInput extends Component{
                 <option value="N">No</option>
             </select>
             <br />
-            <input type="submit" value="Submit Individual Selection"/> 
+            <br/>
+            <input className="schooldressbutton"type="submit" value="Submit Individual Selection"/> 
 
+            <br/>
             <br/>
         </div>
         
@@ -199,7 +216,7 @@ class FormInput extends Component{
      <br />
      <br />
             <div className="submitAll">
-            <input type="submit" value="Submit All Selections"/>  
+            <input className="submitbutton" type="submit" value="Submit All Selections"/>  
             </div>
 
 
@@ -275,6 +292,9 @@ class FormInput extends Component{
         </form> */}
 
         <br/>
+        <br/>
+
+        <div className="searchresults"> Search results: </div>
 
     </div>
         )

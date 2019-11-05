@@ -62,10 +62,10 @@ class SchoolCard extends Component{
     render(){
         
         console.log("schoolcards will render next")
-      
     
         return(
             <div className="schoolCards">
+                
                 {/* <FormInput handleFormInput={props.handleFormInput}/> */}
                 <Card>
                     <CardImg top width="100%" src="https://i.imgur.com/ThFIm2Y.jpg" alt="Chicago School"></CardImg>

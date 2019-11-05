@@ -22,9 +22,9 @@ The API used for this project was through the city of Chicago website (https://d
  - Elevated Train Accessibility
  - Metro Bus Accessibility
 
- API Used for Version 2.0:
+ API Used for App Version 2.0:
 
-The API used for version 2.0 was the same as the API used for the 1st iteration, although the search criteria has been slightly altered to improve filtering performance. The iterated version focuses on the following search criteria:
+The API used for version 2.0 is the same as the API used for the 1st iteration, although the search criteria has been slightly altered to improve filtering performance. The iterated version focuses on the following search criteria:
 
  
  - Elevated Train Accessibility 
@@ -34,7 +34,7 @@ The API used for version 2.0 was the same as the API used for the 1st iteration,
  - Dress Code
 
 
- Both Zipcode and Metro Bus accessibility search criteria were eliminated for the second iteration of the app as their search results typically yielded only one to a few schools, which often created the impression that the users other inputted criteria failed to return results. Eliminating zipcode and metro bus search terms enables the user to see more search results, which they can then examine to find nearest zipcode and the nearest Metro Bus(es). 
+ Both Zipcode and Metro Bus accessibility search criteria were eliminated for the second iteration of the app as these search criteria typically yielded only one to a few schools in the search results, which often created the impression that the users other inputted criteria failed to return results. Eliminating zipcode and metro bus search terms enables the user to see more search results, which they can then examine to find nearest zipcode and nearest Metro Bus(es). 
  
 ## Other Frameworks used:
  
@@ -55,11 +55,11 @@ One way this app could be immediately improved is by incorporating the use of a 
 
 Changes needed and suggested improvements for version 2.0: 
 
-The second iteration of the app successfully created the ability for users to capture the schools that match the total sum of their search criteria. The app still does not utilize the continuous scroll feature for all retureend schoos
-
+The second iteration of the app successfully created the ability for users to capture the schools that match the total sum of their search criteria. The app still does not utilize the continuous scroll feature for all returned schools. 
 
 
 ## Wireframes :
 
 Wireframes for version 2.0: 
 
+https://photos.app.goo.gl/gXv874pWVR8KSYEx9

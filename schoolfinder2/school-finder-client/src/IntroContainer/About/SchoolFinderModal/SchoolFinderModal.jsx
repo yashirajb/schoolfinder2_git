@@ -25,9 +25,9 @@ const AboutSchooFinderModal = (props) => {
     <div>
       <Button color="secondary" onClick={toggle}>Click Here</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>What is SchoolFinder?</ModalHeader>
+        <ModalHeader toggle={toggle}>What is the Chicago SchooFinder App?</ModalHeader>
         <ModalBody>
-            The Chicago School Finder App is designed to help Chicago caregivers of children in grades K-12 find a suitable school for children in their care. 
+            The Chicago SchoolFinder App is designed to help Chicago caregivers of children in grades K-12 find a suitable school for children in their care. 
             Using SchoolFinder increases a caregiver's ability to quickly find or eliminate schools based on the school's zipcode, the school's rating, whether the school has a dress code (uniform) policy, or if a school is proximate to public transit. 
         <br></br>
         <br></br>

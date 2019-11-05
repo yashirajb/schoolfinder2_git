@@ -19,14 +19,14 @@ function CardContainer(props){
     })
 
     return(
+
         <Container fluid>
             <Row>
-                <div className="searchResults">
-                    <h1>Search Results:</h1>
-                </div>
+              
                 {schoolcards}
             </Row>
         </Container>
+   
     )
 }
 

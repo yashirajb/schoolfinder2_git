@@ -7,9 +7,9 @@ import { UncontrolledAlert } from 'reactstrap';
 function AboutAlert() {
     return (
       <UncontrolledAlert color="info">
-       New to SchoolFiner? Click below to learn more <div className="edmodal"></div>
+       New to The Chicago SchoolFinder App? Click below to learn more <div className="edmodal"></div>
        <br></br>
-       <AboutEdBoxModal />
+       <AboutSchooFinderModal />
       </UncontrolledAlert>
     );
   }
