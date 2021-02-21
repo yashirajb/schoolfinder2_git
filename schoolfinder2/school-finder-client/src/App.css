@@ -19,6 +19,7 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .submitbutton{
+  text-align: center;
   background-color:  #E9ECEE;
   border-color:  rgb(155, 221, 233, 0.404);
   border-width: 10px;
